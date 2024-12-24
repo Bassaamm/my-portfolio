@@ -90,12 +90,12 @@ export function Model(props) {
               </group>
               <group
                 name="Computer_5"
-                position={[0.061, 0.743, 0.472]}
+                position={[0.061, 3, 0.472]}
                 rotation={[0, -0.387, 0]}
               />
               <group
                 name="Computer_Mouse_4"
-                position={[0.533, 0.743, 0.53]}
+                position={[0.533, 4, 0.53]}
                 rotation={[0, -0.169, 0]}
               />
               <group
@@ -431,7 +431,6 @@ export function Model(props) {
                   geometry={nodes["React-Logo_Material002_0"].geometry}
                   material={materials["Material.002"]}
                   position={[-8.717, -16.842, 0.979]}
-                  rotation={[-0.003, 0.077, 0.026]}
                   scale={2.263}
                 />
               </group>
