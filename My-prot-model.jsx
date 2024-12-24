@@ -104,12 +104,12 @@ export function Model(props) {
               </group>
               <group
                 name="Computer_5"
-                position={[0.061, 0.743, 0.472]}
+                position={[0.061, 3, 0.472]}
                 rotation={[0, -0.387, 0]}
               />
               <group
                 name="Computer_Mouse_4"
-                position={[0.533, 0.743, 0.53]}
+                position={[0.533, 4, 0.53]}
                 rotation={[0, -0.169, 0]}
               />
               <group
@@ -408,7 +408,50 @@ export function Model(props) {
             </group>
           </group>
         </group>
-
+        <group
+          name="Sketchfab_model003"
+          position={[0.519, 0.751, 1.541]}
+          rotation={[3.087, 0.055, -1.539]}
+          scale={0.014}
+        >
+          <group
+            name="react-logo-circlefbx"
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={0.01}
+          >
+            <group name="RootNode001" position={[0, -0.001, 0]}>
+              <group
+                name="Backdrop"
+                position={[-17.091, 7.935, 0]}
+                rotation={[-Math.PI / 2, 1.571, 0]}
+                scale={[247.854, 247.854, 52.734]}
+              >
+                <mesh
+                  name="Backdrop_Material001_0"
+                  geometry={nodes.Backdrop_Material001_0.geometry}
+                  material={materials["Material.001"]}
+                  position={[-1.389, -2.662, 0.572]}
+                  rotation={[-0.007, 0.177, 0.026]}
+                  scale={2.263}
+                />
+              </group>
+              <group
+                name="React-Logo"
+                position={[0, 7.934, 0]}
+                rotation={[-Math.PI / 2, Math.PI / 2, 0]}
+                scale={[39.166, 39.166, 52.734]}
+              >
+                <mesh
+                  name="React-Logo_Material002_0"
+                  geometry={nodes["React-Logo_Material002_0"].geometry}
+                  material={materials["Material.002"]}
+                  position={[-8.717, -16.842, 0.979]}
+                  scale={2.263}
+                />
+              </group>
+            </group>
+          </group>
+        </group>
         <group
           name="Sketchfab_model004"
           position={[-0.199, 1.346, 2.489]}
