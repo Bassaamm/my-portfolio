@@ -12,7 +12,7 @@ function App() {
       <Canvas>
         {/* <ambientLight intensity={3} /> */}
         {/* <pointLight position={[10, 10, 10]} intensity={1000} /> */}
-        <OrbitControls />
+        {/* <OrbitControls /> */}
         <Background />
         <Experenice />
         <color attach="background" args={["#000"]} />
