@@ -4,7 +4,7 @@ import * as THREE from "three";
 export default function Background() {
   return (
     <>
-      {/* <Environment preset="studio" />
+      <Environment preset="sunset" />
       <Sphere args={[100, 100, 100]} rotation-y={Math.PI / 2}>
         <LayerMaterial
           lighting="physical"
@@ -12,7 +12,7 @@ export default function Background() {
           side={THREE.BackSide}
         >
           <Depth
-            colorA="d9d9d9"
+            colorA="white"
             colorB="white"
             alpha={0.5}
             mode="multiply"
@@ -21,7 +21,7 @@ export default function Background() {
             origin={[1, 1, 1]}
           />
         </LayerMaterial>
-      </Sphere> */}
+      </Sphere>
     </>
   );
 }

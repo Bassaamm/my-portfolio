@@ -1,9 +1,9 @@
-import { Canvas, useThree, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import "./App.css";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { Leva, useControls } from "leva";
+import { Leva } from "leva";
 import Experenice from "./Experenice";
 import Background from "./components/Background";
+import { OrbitControls } from "@react-three/drei";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         {/* <ambientLight intensity={3} /> */}
         {/* <pointLight position={[10, 10, 10]} intensity={1000} /> */}
         {/* <OrbitControls /> */}
-        <Background />
+        {/* <Background /> */}
         <Experenice />
         <color attach="background" args={["#000"]} />
       </Canvas>

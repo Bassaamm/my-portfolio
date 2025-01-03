@@ -10,3 +10,24 @@
 body {
   margin: 0;
 }
+.htmlScreen main {
+  width: 225.5px;
+  height: 132px;
+  border: none;
+  background: burlywood;
+}
+.htmlOffScreen main {
+  width: 225.5px;
+  height: 132px;
+  border: none;
+  cursor: pointer;
+  background: #000;
+}
+.htmlOffScreen main div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}

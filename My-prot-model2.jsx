@@ -45,8 +45,17 @@ export function Model(props) {
   const { actions } = useAnimations(animations, group);
   const [isAnimating, setIsAnimating] = useState(false);
   const [hovered, setHovered] = useState(false);
+
+  const handleModelClick = (event) => {
+    event.stopPropagation();
+    if (cameraRef.current) {
+      const targetPosition = [0.062, 0.973, 0.591]; // Position of Sketchfab_model006
+      const targetLookAt = [0, 0, 0]; // Adjust this based on where you want the camera to look
+      animateCamera(targetPosition, targetLookAt);
+    }
+  };
+
   const handleClick = (event) => {
-    console.log("clicked");
     event.stopPropagation();
     if (isAnimating) return;
 
