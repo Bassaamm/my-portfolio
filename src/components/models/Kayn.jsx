@@ -105,7 +105,13 @@ export function Kayn(props) {
   };
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group
+      ref={group}
+      {...props}
+      dispose={null}
+      onPointerEnter={(e) => (document.body.style.cursor = "pointer")}
+      onPointerLeave={(e) => (document.body.style.cursor = "auto")}
+    >
       <group name="Scene">
         <group
           name="Sketchfab_model002"

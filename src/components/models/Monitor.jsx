@@ -6,10 +6,10 @@ Command: npx gltfjsx@6.5.3 public/models/monitor.glb
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Monitor({ onClick, ...props }) {
+export function Monitor({ handleMonitorLeave, ...props }) {
   const { nodes, materials } = useGLTF("models/monitor.glb");
   return (
-    <group onClick={onClick} {...props} dispose={null}>
+    <group {...props} dispose={null}>
       <group
         position={[0.062, 0.973, 0.591]}
         rotation={[-Math.PI / 2, 0, Math.PI / 2]}

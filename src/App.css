@@ -10,11 +10,11 @@
 body {
   margin: 0;
 }
-.htmlScreen main {
-  width: 225.5px;
-  height: 132px;
+.htmlScreen iframe {
+  width: 1150px;
+  height: 680px;
   border: none;
-  background: burlywood;
+  background: #000;
 }
 .htmlOffScreen main {
   width: 225.5px;
@@ -30,4 +30,20 @@ body {
   color: #fff;
   justify-content: center;
   align-items: center;
+}
+.htmlScreen,
+.htmlOffScreen {
+  z-index: 10;
+  pointer-events: auto;
+}
+.htmlScreen iframe,
+.htmlOffScreen iframe {
+  pointer-events: auto;
+}
+.htmlScreen,
+.htmlOffScreen {
+  position: absolute; /* Ensure absolute positioning inside the container */
+  pointer-events: auto; /* Enable clickability */
+  transform-origin: center; /* Ensure correct alignment when transformed */
+  z-index: 10; /* Make sure it's above other elements */
 }

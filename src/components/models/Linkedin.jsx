@@ -9,7 +9,13 @@ import { useGLTF } from "@react-three/drei";
 export function Linkedin(props) {
   const { nodes, materials } = useGLTF("models/linkedin.glb");
   return (
-    <group {...props} dispose={null}>
+    <group
+      {...props}
+      dispose={null}
+      onClick={() => window.open("https://www.linkedin.com/in/bassamalqarni/")}
+      onPointerEnter={(e) => (document.body.style.cursor = "pointer")}
+      onPointerLeave={(e) => (document.body.style.cursor = "auto")}
+    >
       <group scale={0.092}>
         <group rotation={[0, 1.58, 0]} position={[5, 8.15, 16]} scale={0.843}>
           <mesh

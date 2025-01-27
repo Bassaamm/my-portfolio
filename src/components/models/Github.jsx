@@ -9,7 +9,13 @@ import { useGLTF } from "@react-three/drei";
 export function Github(props) {
   const { nodes, materials } = useGLTF("models/github.glb");
   return (
-    <group {...props} dispose={null}>
+    <group
+      {...props}
+      dispose={null}
+      onClick={() => window.open("https://www.github.com/bassaamm")}
+      onPointerEnter={(e) => (document.body.style.cursor = "pointer")}
+      onPointerLeave={(e) => (document.body.style.cursor = "auto")}
+    >
       <group
         position={[-0.199, 1.346, 2.489]}
         rotation={[-Math.PI / 2, 0, 0.447]}
